@@ -1,0 +1,16 @@
+# Synology Terraform Variables Example
+# Copy this file to terraform.tfvars and fill in your values
+# DO NOT commit terraform.tfvars to version control
+
+# Note: HCP organization is set in main.tf cloud block
+# It can be overridden via TF_CLOUD_ORGANIZATION environment variable
+
+# Synology Configuration
+synology_url      = "https://nas01.specterrealm.com:5001"
+synology_username = "admin"
+synology_password = "your-password-here"
+synology_insecure = true  # Set to false if using valid SSL certificate
+
+# NAS Configuration
+nas_name = "nas01"
+
